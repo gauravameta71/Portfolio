@@ -1,0 +1,47 @@
+.hero-img{
+    width: 100%;
+    background: rgb(0,0,0,0 );
+    height: 65vh;
+    position: relative;
+}
+
+.hero-img::before{
+    content: "";
+    /* background: url("https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=996&t=st=1660827086~exp=1660827686~hmac=af6f62bb41b21d69a2ddcec2143f2c8430e26145921e7c3c64b114444fda20bd"); */
+        background: url("../assets/bg.png");
+
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+}
+
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1{
+    font-size: 2.4rem;
+}
+
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px){
+    .hero-img h1{
+    font-size: 2rem;
+}
+
+
+}
